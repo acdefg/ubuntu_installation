@@ -13,13 +13,19 @@
 ![image](https://user-images.githubusercontent.com/48377634/166101201-fedacbe4-20f5-4e9b-be35-d4769398d95a.png)
 ![image](https://user-images.githubusercontent.com/48377634/166101243-b9170479-59dd-4173-bc4a-9c03d30dba19.png)
 
-## delete double system
+## reference link
+1. https://zhuanlan.zhihu.com/p/355314438
+2. https://zhuanlan.zhihu.com/p/407175785
+
+
+# delete double system
 1. change grub option
 2. delete the disk at disk manager
 3. delete the option at EFI
 
-1.1 boot interface
-1.2 use easyUEFI
+1.
+  1. boot interface
+  2. use easyUEFI
 
 3.
   1. 输入【Win】+【R】，输入【diskpart】打开diskpart；
@@ -35,5 +41,6 @@
   6. 为win10的EFI启动引导项所在分区分配盘符，输入【assign letter = p】，这里p为盘符名称，字母A~Z应该都可以，注意不要和已有盘符名重复即可；
 
 ## reference link
-1. https://zhuanlan.zhihu.com/p/355314438
-2. https://zhuanlan.zhihu.com/p/407175785
+https://www.cnblogs.com/arxive/p/11749770.html
+
+
