@@ -24,6 +24,8 @@
 1. boot interface
 2. use easyUEFI
 ## delete the disk at disk manager
+![image](https://user-images.githubusercontent.com/48377634/166102114-06da85b6-5330-4d1f-b32e-f5c926d13dc9.png)
+把ubuntu几个分区都删掉，小心不要删错
 ## delete the option at EFI
 1. 输入【Win】+【R】，输入【diskpart】打开diskpart；
 
