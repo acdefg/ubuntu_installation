@@ -20,26 +20,23 @@
 
 
 # delete double system
-1. change grub option
-2. delete the disk at disk manager
-3. delete the option at EFI
+## change grub option
+1. boot interface
+2. use easyUEFI
+## delete the disk at disk manager
+## delete the option at EFI
+1. 输入【Win】+【R】，输入【diskpart】打开diskpart；
 
-1.
-  1. boot interface
-  2. use easyUEFI
+2. 输入【list disk】，显示磁盘列表
 
-3.
-  1. 输入【Win】+【R】，输入【diskpart】打开diskpart；
+3. 输入【select disk 0】，选择磁盘0，即win10系统所在磁盘；
 
-  2. 输入【list disk】，显示磁盘列表
+4. 输入【list partition】，查看磁盘0的分区列表；
 
-  3. 输入【select disk 0】，选择磁盘0，即win10系统所在磁盘；
+5. 输入【select partition 3】，选择wind10启动引导项所在分区（即Type=System，容量一般较小为100M的那一个分区）；
 
-  4. 输入【list partition】，查看磁盘0的分区列表；
-
-  5. 输入【select partition 3】，选择wind10启动引导项所在分区（即Type=System，容量一般较小为100M的那一个分区）；
-
-  6. 为win10的EFI启动引导项所在分区分配盘符，输入【assign letter = p】，这里p为盘符名称，字母A~Z应该都可以，注意不要和已有盘符名重复即可；
+6. 为win10的EFI启动引导项所在分区分配盘符，输入【assign letter = p】，这里p为盘符名称，字母A~Z应该都可以，注意不要和已有盘符名重复即可；
+7. 以管理员方式运行记事本，打开p盘，EFI文件夹，删除ubuntu文件夹
 
 ## reference link
 https://www.cnblogs.com/arxive/p/11749770.html
